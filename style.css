@@ -1,0 +1,70 @@
+:root{
+    --grid-size: 4;
+}
+#container{
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(var(--grid-size),1fr);
+    grid-template-rows: repeat(var(--grid-size),1fr);
+    height: 65%;
+    width: 60%;
+    margin: 2% 20%;
+    border: 1px solid black;
+    background-color: white;
+    
+
+}
+html,body{
+    height: 100%;
+    background-color: rgb(73, 234, 255);
+}
+
+#title{
+    position: absolute;
+    color: black;
+    font-size: 45px;
+    margin-top: 2%;
+    margin-left: 20%;
+
+}
+button{
+    background-color: transparent;
+    color: black;
+    border: 1px solid transparent;
+    font-size: 30px;
+}
+#reset{
+    margin-top: 2%;
+    margin-left: 63%; 
+    height: 45px;
+    width: 120px;
+    padding: 5px 20px;
+}
+
+#color-option{
+    display: flex;
+    flex-direction: row;
+}
+#normal{
+    margin-left: 27%;
+    padding: 10px 20px;
+
+}
+#darken,#random{
+    margin-left: 7%;
+    padding: 10px 20px;
+}
+
+#textbox{
+    width: 70px;
+
+}
+.box{
+    transition: all 0.2s;
+
+}
+
+.hovering{
+    background-color: rgba(0, 0, 0, 0.1);
+
+}
